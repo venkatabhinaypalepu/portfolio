@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Venkat Abhinay Palepu — Data Analyst portfolio showcasing Tableau, SQL, Python projects, skills, and contact." />
+  <title>Venkat Abhinay Palepu — Data Analyst Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --accent1: #1abc9c;
+      --bg: #f9f9f9;
+      --text: #333;
+      --muted: #666;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif; }
+    body { background:var(--bg); color:var(--text); line-height:1.6; scroll-behavior:smooth; }
+
+    header { padding:20px; text-align:center; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.1); position:sticky; top:0; z-index:10; }
+    header h1 { font-size:28px; color:var(--accent1); }
+    nav { margin-top:10px; }
+    nav a { margin:0 10px; text-decoration:none; color:var(--text); font-weight:500; }
+    nav a:hover { color:var(--accent1); }
+
+    section { padding:60px 20px; max-width:1000px; margin:0 auto; }
+    .section-title h3 { font-size:24px; margin-bottom:40px; color:var(--accent1); text-align:center; }
+
+    /* Hero */
+    #hero { display:flex; flex-wrap:wrap; gap:20px; align-items:center; justify-content:space-between; }
+    .intro-left { flex:1; min-width:280px; }
+    .intro-left h2 { font-size:32px; margin-bottom:10px; }
+    .type { font-size:18px; color:var(--accent1); margin-bottom:15px; }
+    .skills { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+    .chip { background:var(--accent1); color:#fff; padding:6px 10px; border-radius:20px; font-size:14px; }
+
+    .intro-right { flex:1; min-width:280px; display:flex; justify-content:center; }
+    .card { background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:center; transition:transform 0.3s; }
+    .card:hover { transform:translateY(-5px); }
+    .profile-img { width:100%; border-radius:12px; }
+    .links { margin-top:12px; display:flex; justify-content:center; gap:15px; }
+    .social { color:var(--accent1); font-size:18px; text-decoration:none; }
+    .social:hover { color:#16a085; }
+
+    /* Projects */
+    .projects { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+    .project { background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.05); transition:transform 0.3s; }
+    .project:hover { transform:translateY(-5px); }
+    .project h4 { margin-bottom:10px; color:var(--accent1); }
+    .project img { width:100%; border-radius:12px; margin-bottom:12px; }
+    .tags { margin-top:10px; }
+    .tag { background:#eee; color:var(--text); padding:4px 8px; border-radius:12px; font-size:12px; margin-right:6px; }
+    .btn-outline { display:inline-block; margin-top:12px; padding:6px 12px; border:1px solid var(--accent1); color:var(--accent1); border-radius:6px; text-decoration:none; }
+    .btn-outline:hover { background:var(--accent1); color:#fff; }
+
+    /* About & Contact */
+    #about, #contact { text-align:center; }
+    .muted { color:var(--muted); margin-top:12px; }
+
+    /* Footer */
+    footer { padding:20px; text-align:center; font-size:14px; color:var(--muted); background:#fff; box-shadow:0 -2px 4px rgba(0,0,0,0.05); }
+
+    /* Reveal animation */
+    .reveal { opacity:0; transform:translateY(20px); transition:all 0.6s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Venkat Abhinay Palepu</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="intro-left reveal">
+      <h2>Hi — I'm <strong>Venkat Abhinay Palepu</strong></h2>
+      <div class="type">Data Analyst</div>
+      <p>I'm a passionate Data Analyst who turns raw data into actionable insights. I build dashboards, automate reports, and analyze data to help businesses make informed decisions.</p>
+      <div class="skills">
+        <div class="chip">Power BI</div>
+        <div class="chip">SQL</div>
+        <div class="chip">Excel</div>
+        <div class="chip">Python</div>
+        <div class="chip">Tableau</div>
+      </div>
+    </div>
+
+    <div class="intro-right reveal">
+      <div class="card">
+        <img src="images/WhatsApp Image 2025-04-15 at 16.58.02_f5a16644.jpg" alt="Venkat Abhinay" class="profile-img">
+        <div class="links">
+          <a href="https://www.linkedin.com/in/venkat--abhinay--palepu/" target="_blank" class="social"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/venkatabhinaypalepu" target="_blank" class="social"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-title reveal">
+      <h3>Projects & Features</h3>
+    </div>
+    <div class="projects">
+      <div class="project reveal">
+        <img src="images/1.jpg" alt="Coffee Shop Sales Analysis">
+        <h4>Coffee Shop Sales Analysis</h4>
+        <p>SQL project analyzing sales, products, customers, and cities to uncover top-selling items, customer behavior, and revenue trends. Demonstrates joins, aggregations, and window functions.</p>
+        <div class="tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Data Analysis</span>
+        </div>
+        <a href="https://github.com/venkatabhinaypalepu/coffee_shop_sales_sql/blob/main/CoffeeShopSales.sql" class="btn-outline">View Analysis</a>
+      </div>
+
+	  <div class="project reveal">
+        <img src="images/Screenshot 2025-10-18 063457.png" alt="AirBnB Dashboard">
+        <h4>AirBnB Dashboard</h4>
+        <p>Tableau project creating an interactive dashboard to analyze AirBnB listings, uncover trends, identify top-rated properties, track city-wise performance, and provide actionable insights for hosts and potential renters.</p>
+        <div class="tags">
+          <span class="tag">Tableau</span>
+          <span class="tag">Dashboard</span>
+        </div>
+        <a href="https://public.tableau.com/app/profile/venkat.abhinay.palepu/viz/AirBnBDashboard_17607427802010/Dashboard1" target="_blank" class="btn-outline">View Dashboard</a>
+      </div>
+
+      <div class="project reveal">
+        <img src="images/2.jpg" alt="Movies Correlation Analysis">
+        <h4>Movies Correlation Analysis</h4>
+        <p>Python project analyzing box office data to identify key factors influencing movie success, including budget, audience votes, and genre trends. Visualized correlations and patterns using Pandas, Matplotlib.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Data Visualization</span>
+        </div>
+        <a href="https://github.com/venkatabhinaypalepu/movies_correlation_python/blob/main/Movies_Correlation.ipynb" class="btn-outline">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="reveal">
+    <h3>About Me</h3>
+    <p class="muted">I'm a Data Analyst with a focus on extracting actionable insights from complex datasets. Skilled in Python, SQL, Tableau, and data visualization. I aim to support businesses with data-driven decision-making and continuous improvement.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="reveal">
+    <h3>Contact</h3>
+    <p class="muted">Feel free to reach out ✌︎︎.</p>
+    <p class="muted">📍 Address: Amalapuram, Konaseema, Andhra Pradesh, 533201</p>
+    <p class="muted">📞 Mobile: +91-8374925674</p>
+    <p class="muted">✉️ Email: venkatabhinaypalepu@gmail.com</p>
+    <div class="links" style="margin-top:12px">
+      <a href="https://www.linkedin.com/in/venkat--abhinay--palepu/" target="_blank" class="social"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/venkatabhinaypalepu" target="_blank" class="social"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="foot-note">© 2025 Venkat Abhinay Palepu. All Rights Reserved.</div>
+  </footer>
+
+  <!-- JS for reveal animation -->
+  <script>
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealOnScroll = () => {
+      for(const el of revealElements){
+        const rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 50){
+          el.classList.add('visible');
+        }
+      }
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+
+</body>
+</html>
